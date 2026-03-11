@@ -34,7 +34,7 @@ function App() {
 
         <Route path="/" element={<Home />} />
 
-        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/privacy-policy" element={<Privacy />} />
 
       </Routes>
     </BrowserRouter>
