@@ -18,7 +18,7 @@ const Navbar = () => {
           <li>Process</li>
           <li>Testimonials</li>
           <li>Contact</li>
-          <li><a href="/privacy">Privacy Policy</a></li>
+          <li><a href="/privacy-policy">Privacy Policy</a></li>
         </ul>
 
         <button className="nav-btn">
