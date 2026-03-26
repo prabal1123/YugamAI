@@ -10,6 +10,7 @@ import Testimonials from "./components/testimonials";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
 import Privacy from "./pages/privacy";
+import DeleteAccount from "./pages/DeleteAccount";
 
 function Home() {
   return (
@@ -23,6 +24,7 @@ function Home() {
       <Testimonials />
       <Contact />
       <Footer />
+      
     </>
   );
 }
@@ -36,6 +38,7 @@ function App() {
 
         <Route path="/privacy-policy" element={<Privacy />} />
 
+        <Route path="/delete-account" element={<DeleteAccount />} />
       </Routes>
     </BrowserRouter>
   );
