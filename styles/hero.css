@@ -76,3 +76,65 @@
   }
 
 }
+/* Container for the buttons */
+.hero-buttons {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Ensure links wrap buttons cleanly */
+.hero-btn-link {
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Primary Button (View Our Work) */
+.primary-btn {
+  background: #5b7c3a;
+  border: 1px solid #5b7c3a;
+  padding: 14px 26px;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.primary-btn:hover {
+  background: #4b6630;
+  border-color: #4b6630;
+}
+
+/* Fixed Secondary Button (Start a Project) */
+.secondary-btn {
+  background: transparent;
+  border: 1px solid #5b7c3a; /* Dark green border to match branding */
+  color: #2d3e1f;            /* Clear dark green text for readability */
+  padding: 14px 26px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.secondary-btn:hover {
+  background: #e7eddc;       /* Subtle green background tint on hover */
+  color: #2d3e1f;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 20px;
+  }
+
+  .hero-btn-link, .primary-btn, .secondary-btn {
+    width: 100%; /* Full width buttons on small screens */
+  }
+}

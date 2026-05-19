@@ -34,7 +34,10 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px; /* Prevents your fixed navbar header from covering the section title */
+}
 button {
   border-radius: 8px;
   border: 1px solid transparent;

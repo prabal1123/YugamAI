@@ -58,3 +58,53 @@
 .nav-links a:hover {
   color: #2d3e1f;
 }
+/* Styling for the hamburger lines icon button */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: transparent;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #1f2b16;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Responsiveness overrides */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+    z-index: 100;
+  }
+
+  .nav-links {
+    display: flex; /* Override previous rule hidden setting */
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%; /* Keeps menu hidden out of frame off-screen initially */
+    width: 250px;
+    height: 100vh;
+    background: #ffffff;
+    padding: 100px 30px;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.05);
+    transition: right 0.3s ease-in-out;
+    gap: 25px;
+  }
+
+  /* Triggers when state updates drawer forward slide effect */
+  .nav-links.mobile-open {
+    right: 0;
+  }
+  
+  .nav-btn {
+    display: none; /* Hides desktop header layout button button scale wrapper */
+  }
+}
